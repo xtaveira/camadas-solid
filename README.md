@@ -9,7 +9,7 @@ Use cases de Create Transaction e GetTransaction
 Entities Transaction e Installment
 API com Banco de Dados
 
-### Pontos falados no video, depois elaborarei um texto com 30 linhas em outro arquivo
+### Pontos falados no video, depois elaborarei um texto com a lauda em outro arquivo
 
 Começar um projeto por conta própria é a melhor forma de entender as decisões.
 Completar método e corrigir BUG a vida inteira não nos trás experiência
