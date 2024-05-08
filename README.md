@@ -9,6 +9,8 @@ Use cases de Create Transaction e GetTransaction
 Entities Transaction e Installment
 API com Banco de Dados
 
+### Pontos falados no video, depois elaborarei um texto com 30 linhas em outro arquivo
+
 Começar um projeto por conta própria é a melhor forma de entender as decisões.
 Completar método e corrigir BUG a vida inteira não nos trás experiência
 Entender usuário e aquilo que ele está fazendo
@@ -51,4 +53,39 @@ Com o transaction repository na mão, podemos desmembrar
 Ao persistir uma transaction também persistimos uma installment?
 application é um regra específica
 osquestrando as regras de negócio
+O Teste garante a coragem para fazer a implementação
+Camada de aplication misturada com conceitos de I/O me torna fragil
+O repositório não deveria conhecer o driver que ele está usando
+deve olhar de forma mais desacoplada
+toda connection deve ter um query, statement, params
+criando padrão para encapsular o pgp e implementar o contrato
+o repositório não conhece mais o pg promise
+objetivo é fazer as camadas deixarem de se conhecer
+main component age como um root, entry point da aplicação
+dependency invertion
+todo http server tem on e method string, url, callback, listen port number
+tiramos o acoplamento com express, tipode pattern ainda é o mesmo
+get e post é [method]
+invocar o callback de params e body
+res.json com o output que vai voltar
+separando dependências
+main conhece a httpserver
+init define as rotas e faz o listen
+começamos com uma aplicação totalmente acoplada e agora temos uma aplicação instanciada
+quem sabe o tipo de conexão é o main
+deixou a aplicação mais flexível
+Open Close Principle
+Aberta para expansão
+Pelos testes estamos livres
+implementação em memória
+ganhamos muitas possibilidades ao desacoplar camadas
+aplicação guia com mecanismos de I/O
+aderentes a clean architecture
+use cases das entidades
+deveria ter um teste de unidade
+tecnologia em direção ao domínio
+é muito mais rápido testar a nível de unidade do que de integração
+poderíamos ter diversos cenários
+para ter os testes precisamos de uma boa estruturação de camadas da aplicação
+
 
